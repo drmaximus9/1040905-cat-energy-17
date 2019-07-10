@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим  Булатов](https://up.htmlacademy.ru/adaptive/17/user/1040905).
-* Наставник: `Неизвестно`.
+* Наставник: `Екатерина Комнатная`.
 
 ---
 
