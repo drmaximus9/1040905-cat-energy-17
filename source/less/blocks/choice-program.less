@@ -3,7 +3,7 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 320px;
-  min-height: 305px;;
+  min-height: 305px;
   color: @color-page;
   margin: 0 auto;
 }
@@ -37,5 +37,39 @@
   margin: 0;
   padding: 0;
 }
-
+@media (min-width: @tablet-width) {
+  .choice-program {
+    background-image: unset;
+    width: 708px;
+  }
+  .choice-program__title {
+    color: @color-text;
+  }
+  .choice-program__slogan {
+    color: @color-text;
+  }
+  .choice-program__wrap-container {
+    width: 708px;
+    margin: 0 auto;
+  }
+  .choice-program__main-product-image {
+    display: none;
+  }
+  .choice-program__image {
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 708px;
+    height: 609px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .choice-program__image {
+    background-image: unset;
+  }
+  .choice-program__wrap-container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
 
