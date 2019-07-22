@@ -3,3 +3,17 @@
   margin: 0 auto;
   background-color: @color-footer;
 }
+@media (min-width: @tablet-width) {
+  .page-footer__wrap-container {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-footer__wrap-container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

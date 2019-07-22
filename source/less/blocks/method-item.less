@@ -28,7 +28,17 @@
   padding: 0;
   color: @color-description-text;
 }
-.method-item__wrap-container {
-  width: 320px;
-  margin: 0 auto;
+@media (min-width: @tablet-width) {
+  .method-item {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+  }
+}
+@media (min-width: @desktop-width) {
+  .method-item {
+  margin: 0;
+  width: 570px;
+  }
 }

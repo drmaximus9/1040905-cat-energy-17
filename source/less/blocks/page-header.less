@@ -1,7 +1,24 @@
 .page-header {
   background-color: @color-page;
+  width: 100%;
 }
 .page-header__wrap-container {
   width: 320px;
   margin: 0 auto;
+  display: flex;
+
+}
+@media (min-width: @tablet-width) {
+  .page-header__wrap-container {
+   width: 708px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-header__wrap-container {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

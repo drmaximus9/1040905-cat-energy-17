@@ -3,8 +3,8 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 320px;
-  min-height: 305px;;
-  color: @color-page;
+  min-height: 305px;
+
   margin: 0 auto;
 }
 .choice-program__title {
@@ -37,5 +37,44 @@
   margin: 0;
   padding: 0;
 }
+@media (min-width: @tablet-width) {
+  .choice-program {
+    background-image: unset;
+    width: 708px;
+  }
+  .choice-program__title {
+    color: @color-text;
+  }
+  .choice-program__slogan {
+    color: @color-text;
+  }
+  .choice-program__wrap-container {
+    width: 708px;
+    margin: 0 auto;
+  }
+  .choice-program__main-product-image {
+    width: 708px;
+    height: 609px;
 
+  }
+}
+@media (min-width: @desktop-width) {
+  .choice-program {
+    width: 1220px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position:0 0;
 
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 696px;
+  }
+  .choice-program__main-product-image {
+    width: 552px;
+    height: 499px;
+
+  }
+  .choice-program__wrap-container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

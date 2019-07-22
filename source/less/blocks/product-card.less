@@ -21,3 +21,22 @@
   line-height: 16px;
   color: @color-description-text;
 }
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: @tablet-width) {
+  .product-card {
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+
+
+  }
+}
+@media (min-width: @desktop-width) {
+  .product-card {
+    width: 245px;
+    margin-right: 50px;
+  }
+}

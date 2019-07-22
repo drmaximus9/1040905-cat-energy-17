@@ -1,7 +1,10 @@
 .site-list {
   list-style: none;
-  width: 320px;
-  background-color: @color-page;
+
+
+
+  margin: 0;
+  padding: 0;
 
 
 }
@@ -14,4 +17,14 @@
   line-height: 20px;
   text-transform: uppercase;
 }
-
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: @desktop-width) {
+  // .site-list__link {
+  //   color: @color-page;
+  // }
+}
