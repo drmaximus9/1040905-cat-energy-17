@@ -1,4 +1,5 @@
 .footer-development {
+  width: 280px;
   display: flex;
   justify-content: flex-start;
 }
@@ -7,5 +8,48 @@
   color: @color-description-text;
   font-size: 16px;
   line-height: 16px;
+  color:  #555555;
 
+}
+.footer-development__link--academy {
+  width: 195px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding-top: 27px;
+  padding-bottom: 35px;
+  padding-left: 0px;
+}
+.footer-development__image {
+  width: 27px;
+  height: 34px;
+  padding-top: 19px;
+  padding-left: 58px;
+}
+@media (min-width: @tablet-width) {
+  .footer-development__link--academy {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+    width: 195px;
+    padding-top: 61px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+  }
+  .footer-development__image {
+    width: 27px;
+    height: 34px;
+    padding-top: 53px;
+    padding-left: 0px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .footer-development__image {
+    margin-right: 13px;
+  }
+  .footer-development__link--academy {
+    margin-right: 0px;
+    margin-left: 112px;
+  }
 }

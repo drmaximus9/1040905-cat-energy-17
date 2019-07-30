@@ -7,27 +7,28 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header page-header--main-header">
+    <header class="page-header">
       <div class="page-header__wrap-container">
-          <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg"
-              width="254" height="65" alt="логотип Cat Energy">
-          </a>
-          <nav class="main-nav">
+
+          <nav class="main-nav main-nav--opened main-nav--nojs">
             <h2 class="visually-hidden">Навигация</h2>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active">
-                      <a class="site-list__link">Главная</a>
-                    </li>
-                    <li class="site-list__item">
-                      <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-                    </li>
-                    <li class="site-list__item">
-                      <a class="site-list__link" href="form.html">Выбор программы</a>
-                    </li>
-                  </ul>
+                <a class="page-header__logo">
+                    <img class="page-header__logo-image" src="img/logo-mobile.svg"
+                    width="200" height="38" alt="логотип Cat Energy">
+                  </a>
+                  <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                      <ul class="main-nav__list site-list">
+                          <li class="site-list__item site-list__item--active">
+                            <a class="site-list__link">Главная</a>
+                          </li>
+                          <li class="site-list__item">
+                            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+                          </li>
+                          <li class="site-list__item">
+                            <a class="site-list__link" href="form.html">Подбор программы</a>
+                          </li>
+                      </ul>
             </div>
           </nav>
       </div>
@@ -42,7 +43,7 @@
             <p class="choice-program__image">
                 <img class="choice-program__main-product-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy">
                 <a class="choice-program__button " href="choice.html">
-                    Подобрать программу
+                   <span>Подобрать программу</span>
                 </a>
             </p>
         </div>
@@ -107,12 +108,13 @@
               <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="логотип CAT ENERGY">
             </a>
             <ul class="page-footer__social social-list">
-              <li class="social-list__item"><a class="social-list__link" href="#">ВК</a></li>
-              <li class="social-list__item"><a class="social-list__link" href="#">Инстаграм</a></li>
-              <li class="social-list__item"><a class="social-list__link" href="#">Фэйсбук</a></li>
+              <li class="social-list__item"><a class="social-list__link social-list__link--vk" href="#"><span class="visually-hidden">ВК</span></a></li>
+              <li class="social-list__item"><a class="social-list__link social-list__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+              <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="#"><span class="visually-hidden">Фэйсбук</span></a></li>
             </ul>
             <div class="page-footer__development footer-development">
-              <a class="footer-development__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <a class="footer-development__link footer-development__link--academy"
+               href="https://htmlacademy.ru/intensive/adaptive">
                 HTML Academy
               </a>
               <a class="footer-development__link-image" href="https://htmlacademy.ru/intensive/adaptive">
@@ -121,6 +123,7 @@
             </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 
 </html>
