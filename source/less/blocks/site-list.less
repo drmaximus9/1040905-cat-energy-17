@@ -50,7 +50,7 @@
     justify-content: space-between;
     width: 520px;
     min-height: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
   }
   .site-list__item--active {
     border-bottom: 2px solid @color-green-button;
@@ -113,6 +113,18 @@
     padding-bottom: 10px;
     padding-top: 25px;
     color: @color-page;
+  }
+  .site-list a[href] {
+    &:hover,
+    &:focus {
+      color: @color-page;
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: @color-page;
+      opacity: 0.3;
+    }
   }
   .page-header--main-header .site-list__link {
     color: @color-text;

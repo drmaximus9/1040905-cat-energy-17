@@ -5,8 +5,11 @@
   background-repeat: no-repeat;
   width: 320px;
   min-height: 305px;
-
   margin: 0 auto;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 .choice-program__title {
 
@@ -38,6 +41,15 @@
   text-decoration: none;
   background-color: @color-green-button;
   padding: 0px 0px;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+  &:focus {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: #81bd5d;
+  }
 
 }
 .choice-program__button span {
@@ -54,6 +66,10 @@
 }
 .choice-program__main-product-image {
   padding-left: 0px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/index-can-mobile@2x.png");
+    background-size: 280px auto;
+  }
 }
 .choice-program__image {
   margin: 0;
@@ -91,26 +107,43 @@
     margin: 0 auto;
   }
   .choice-program__main-product-image {
-    width: 629px;
+    width: 709px;
     height: 609px;
-    margin-bottom: -580px;
-    margin-left: 79px;
-    z-index: 100;
+    margin-bottom: -595px;
+    margin-left: 0px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/index-can-tablet@2x.jpg");
+      background-size: 709px auto;
+    }
 
 
   }
 
   .choice-program__image {
-    margin-bottom: 530px;
+    position: relative;
+    margin-bottom: 0px;
     margin-top: 16px;
 
   }
   .choice-program__button {
+    position: absolute;
+    top: 30px;
     width: 245px;
-    text-transform: uppercase;
-    margin-left: 89px;
 
-    z-index: 2;
+    &:hover {
+      background-color: #5eaa2f;
+    }
+    &:focus {
+      background-color: #5eaa2f;
+    }
+    &:active {
+      color: #81bd5d;
+    }
+    text-transform: uppercase;
+    margin-left: 90px;
+
+    // z-index: 2;
 
   }
   .choice-program__button span {
@@ -125,22 +158,27 @@
     width: 100%;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: 650px 0;
-
     background-repeat: no-repeat;
-
-    height: 696px;
-
+    height: auto;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
   .choice-program__image {
     margin: 0;
   }
   .choice-program__main-product-image {
-    width: 522px;
+    width: 552px;
     height: 499px;
-    padding-left: 404px;
+    padding-left: 450px;
     padding-top: 0px;
     margin-top: -262px;
     margin-bottom: 0;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/index-can-desktop@2x.png");
+      background-size: 552px auto;
+    }
 
   }
   .choice-program__title {
@@ -163,7 +201,8 @@
 
     font-size: 20px;
     line-height: 20px;
-
+    top: 240px;
+    left: 0px;
     width: 245px;
     text-align: center;
     margin-left: 79px;
