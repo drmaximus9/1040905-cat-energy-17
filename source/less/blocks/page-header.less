@@ -3,19 +3,23 @@
   width: 100%;
 
 }
-.page-header--main-header {
-  border-bottom: 2px solid #ededed;
-}
+
 .page-header__wrap-container {
   width: 320px;
   margin: 0 auto;
   display: flex;
 
 }
-.page-header__logo-image {
+.page-header__logo {
+  width: 100%;
+  display: inline-block;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 14px;
+  // border-bottom: 1px solid #ebebeb;
+}
+.page-header__logo-image {
+
   &:hover {
     opacity: 0.8;
   }
@@ -42,6 +46,10 @@
   }
   .page-header__logo {
     margin-top: 8px;
+    border: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
   }
   .page-header__logo-image {
     width: 173px;

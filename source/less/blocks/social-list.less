@@ -2,11 +2,15 @@
   width: 280px;
   min-height: 62px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  border-bottom: 2px solid #d9d9d9;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+.social-list__item {
+  padding-top: 24px;
 }
 .social-list__link {
   position: relative;
@@ -14,15 +18,11 @@
   text-decoration: none;
 
 }
-.social-list__link--vk::before {
-  content: "";
 
-  position: absolute;
-  background-image: url("../../img/icon-vk.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 12px;
+.social-list__link--vk {
+  margin-left: 74px;
+
+  svg {
   &:hover,
   &:focus {
     fill: #a4d189;
@@ -31,123 +31,93 @@
     fill-opacity: 0.3;
   }
 
+  }
 
 
-  left: -67px;
-  top: 43px;
 }
-.social-list__link--instagram::before {
-  content: "";
+.social-list__link--instagram {
+  margin-right: 3px;
 
-  position: absolute;
-  background-image: url("../../img/icon-insta.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 16px;
+  svg {
+   width: 16px;
+   height: 16px;
 
-  left: -8px;
-  top: 41px;
+  }
 }
-.social-list__link--fb::before {
-  content: "";
-
-  position: absolute;
-  background-image: url("../../img/icon-fb.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width: 10px;
-  height: 19px;
-
-  left: 48px;
-  top: 39px;
+.social-list__link--fb {
+  margin-right: 81px;
+  margin-left: 0px;
+  svg {
+   width: 10px;
+   height: 19px;
+  }
 }
+
 @media (min-width: @tablet-width) {
+  .social-list {
+    padding-top: 37px;
+    padding-bottom: 0px;
+    border: none;
+  }
+
+  .social-list__link--vk {
+    margin-left: 53px;
+    svg {
+
+      width: 30px;
+      height: 16px;
+    }
+  }
+  .social-list__link--instagram {
+
+
+    svg {
+      margin-top: -2px;
+      width: 23px;
+      height: 23px;
+
+    }
+  }
+  .social-list__link--fb {
+    margin-right: 52px;
+    svg {
+      margin-top: -5px;
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+}
+@media (min-width: @desktop-width) {
   .social-list {
     padding-top: 42px;
     padding-bottom: 0px;
     border: none;
   }
-  .social-list__link--vk::before {
-    content: "";
-
-    position: absolute;
-    background-image: url("../../img/icon-vk.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 16px;
-
-
-    left: -71px;
-    top: 39px;
+  .social-list__item {
+    padding-top: 19px;
   }
-  .social-list__link--instagram::before {
-    content: "";
-
-    position: absolute;
-    background-image: url("../../img/icon-insta.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 23px;
-    height: 23px;
-
-    left: -13px;
-    top: 35px;
+  .social-list__link--vk {
+    margin-left: 70px;
+     svg {
+      width: 30px;
+      height: 16px;
+    }
   }
-  .social-list__link--fb::before {
-    content: "";
+  .social-list__link--instagram {
+    margin-right: 0px;
 
-    position: absolute;
-    background-image: url("../../img/icon-fb.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 14px;
-    height: 28px;
+    svg {
+     width: 23px;
+     height: 23px;
 
-    left: 39px;
-    top: 32px;
+    }
   }
-}
-@media (min-width: @desktop-width) {
-  .social-list__link--vk::before {
-    content: "";
-
-    position: absolute;
-    background-image: url("../../img/icon-vk.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 16px;
-
-
-    left: -70px;
-    top: 38px;
-  }
-  .social-list__link--instagram::before {
-    content: "";
-
-    position: absolute;
-    background-image: url("../../img/icon-insta.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 23px;
-    height: 23px;
-
-    left: -12px;
-    top: 35px;
-  }
-  .social-list__link--fb::before {
-    content: "";
-
-    position: absolute;
-    background-image: url("../../img/icon-fb.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 14px;
-    height: 28px;
-
-    left: 40px;
-    top: 33px;
+  .social-list__link--fb {
+    margin-right: 86px;
+    svg {
+     width: 14px;
+     height: 28px;
+    }
   }
 }
