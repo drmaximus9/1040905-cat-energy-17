@@ -151,13 +151,13 @@
   .choice-program {
     width: 100%;
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 0%, transparent 50%, #64a83b 50%, #64a83b 100%);
-    background-position: right 0;
-    background-repeat: no-repeat;
-    background-size: 50% 696px;
+    background-position: left calc(50% + 360px) top 0, left top;
+    background-repeat: no-repeat,repeat;
+    background-size: 720px 696px, auto auto;
     height: 696px;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 50% 696px;
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, transparent 0%, transparent 50%, #64a83b 50%, #64a83b 100%);
+      background-size: 720px 696px, auto auto;
     }
   }
   .choice-program__image {
