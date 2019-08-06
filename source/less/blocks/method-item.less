@@ -19,9 +19,7 @@
 
 
 }
-.method-item--losing {
 
-}
 .method-item--losing .method-item__title {
   padding-top: 29px;
   padding-left: 11px;
@@ -41,7 +39,7 @@
   content: "";
   position: absolute;
 
-  background-image: url("../../img/icon-cat-slim.svg");
+  background-image: url("../img/icon-cat-slim.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 35px;
@@ -67,7 +65,7 @@
   content: "";
   position: absolute;
 
-  background-image: url("../../img/icon-cat-pro.svg");
+  background-image: url("../img/icon-cat-pro.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 67px;
@@ -104,13 +102,30 @@
     content: "";
 
     position: absolute;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     width: 24px;
     height: 11px;
     top: 3px;
     left: 117px;
+
+  }
+  &:hover::before {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 33px;
+    height: 11px;
+  }
+  &:focus::before {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 33px;
+    height: 11px;
+  }
+  &:active::before {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 33px;
+    height: 11px;
+    color: #b7b7b7;
   }
 }
 .method-item--gain .method-item__title {
@@ -127,13 +142,29 @@
     content: "";
 
     position: absolute;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     width: 24px;
     height: 11px;
     top: 3px;
     left: 115px;
+  }
+  &:hover::before {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 33px;
+    height: 11px;
+  }
+  &:focus::before {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 33px;
+    height: 11px;
+  }
+  &:active::before {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 33px;
+    height: 11px;
+    color: #b7b7b7;
   }
 }
 .method-item__link {
@@ -192,13 +223,29 @@
       content: "";
 
       position: absolute;
-      background-image: url("../../img/icon-right-arrow-long.svg");
+      background-image: url("../img/icon-right-arrow-long.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
       width: 24px;
       height: 11px;
       top: 5px;
       left: 184px;
+    }
+    &:hover::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+    }
+    &:focus::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+    }
+    &:active::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+      color: #b7b7b7;
     }
   }
   .method-item--gain .method-item__title {
@@ -217,13 +264,29 @@
       content: "";
 
       position: absolute;
-      background-image: url("../../img/icon-right-arrow-long.svg");
+      background-image: url("../img/icon-right-arrow-long.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
       width: 24px;
       height: 11px;
       top: 4px;
       left: 178px;
+    }
+    &:hover::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+    }
+    &:focus::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+    }
+    &:active::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+      color: #b7b7b7;
     }
   }
   .method-item__link {
@@ -236,54 +299,45 @@
 
   }
   .method-item--losing::before {
-    content: "";
-    position: absolute;
 
     width: 200px;
     height: 200px;
-    background-color: @color-green-button;
+
     left: 446px;
     top: 90px;
-    border-radius: 50%;
+
   }
   .method-item--losing::after {
-    content: "";
-    position: absolute;
 
-    background-image: url("../../img/icon-cat-slim.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+
+
     width: 140px;
     height: 194px;
     left:  476px;
     top: 78px;
-    z-index: 2;
+
 
 
   }
   .method-item--gain::before {
-    content: "";
-    position: absolute;
+
 
     width: 200px;
     height: 200px;
-    background-color: @color-green-button;
+
     left: 449px;
     top: 93px;
-    border-radius: 50%;
+
   }
   .method-item--gain::after {
-    content: "";
-    position: absolute;
 
-    background-image: url("../../img/icon-cat-pro.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+
+
     width: 268px;
     height: 112px;
     left: 411px;
     top: 136px;
-    z-index: 2;
+
 
 
   }
@@ -322,13 +376,29 @@
       content: "";
 
       position: absolute;
-      background-image: url("../../img/icon-right-arrow-long.svg");
+      background-image: url("../img/icon-right-arrow-long.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
       width: 24px;
       height: 11px;
       top: 5px;
       left: 184px;
+    }
+    &:hover::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+    }
+    &:focus::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+    }
+    &:active::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+      color: #b7b7b7;
     }
   }
   .method-item__description {
@@ -340,28 +410,23 @@
 
   }
   .method-item--losing::before {
-    content: "";
-    position: absolute;
+
 
     width: 100px;
     height: 100px;
-    background-color: @color-green-button;
+
     left: 52px;
     top: 47px;
-    border-radius: 50%;
+
   }
   .method-item--losing::after {
-    content: "";
-    position: absolute;
 
-    background-image: url("../../img/icon-cat-slim.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+
+
     width: 70px;
     height: 97px;
     left: 66px;
     top: 41px;
-    z-index: 2;
 
 
   }
@@ -381,7 +446,7 @@
       content: "";
 
       position: absolute;
-      background-image: url("../../img/icon-right-arrow-long.svg");
+      background-image: url("../img/icon-right-arrow-long.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
       width: 24px;
@@ -389,30 +454,40 @@
       top: 4px;
       left: 178px;
     }
+    &:hover::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+    }
+    &:focus::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+    }
+    &:active::before {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      height: 11px;
+      color: #b7b7b7;
+    }
   }
   .method-item--gain::before {
-    content: "";
-    position: absolute;
+
 
     width: 100px;
     height: 100px;
-    background-color: @color-green-button;
+
     left: 53px;
     top: 47px;
-    border-radius: 50%;
+
   }
   .method-item--gain::after {
-    content: "";
-    position: absolute;
 
-    background-image: url("../../img/icon-cat-pro.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
     width: 134px;
     height: 56px;
     left: 34px;
     top: 70px;
-    z-index: 2;
+
 
 
   }
