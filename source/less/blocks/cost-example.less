@@ -1,0 +1,165 @@
+.cost-example__weight {
+  width: 123px;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+
+}
+.cost-example__weight-value {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding:  13px 41px  18px 41px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5%;
+
+}
+.cost-example__description {
+  display: block;
+  width: 68px;
+
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+  margin-left: 18px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  color: #555555;
+  text-align: center;
+  background-color: @color-footer;
+
+}
+.cost-example__time {
+  width: 123px;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  margin-left: 33px;
+
+}
+.cost-example__wrap {
+  display: flex;
+  margin-bottom: 9px;
+
+}
+.cost-example__days-value {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #111111;
+  padding: 14px 17px  17px 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5%;
+}
+.cost-example__time-description {
+  display: block;
+  width: 68px;
+
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+  margin-left: 18px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  color: #555555;
+  text-align: center;
+  background-color: @color-footer;
+
+}
+
+.cost-example__summary {
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+@media (min-width: @tablet-width) {
+  .cost-example {
+    display: flex;
+    margin-bottom: 60px;
+  }
+  .cost-example__weight {
+    width: 162px;
+  }
+  .cost-example__weight-value {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 55px 18px;
+  }
+  .cost-example__time {
+    width: 162px;
+    margin-left: 42px;
+  }
+  .cost-example__days-value {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 16px 29px  17px;
+  }
+  .cost-example__description {
+    width: 112px;
+    padding: 11px 5px 11px 7px;
+
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @color-page;
+  }
+  .cost-example__time-description {
+    width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 11px 3px;
+    margin-left: 8px;
+    background-color: @color-page;
+  }
+  .cost-example__summary {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    padding-top: 10px;
+    margin-left: 161px;
+    margin-right: auto;
+  }
+  .cost-example__summary span {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .cost-example {
+    display: flex;
+    flex-direction: column;
+  }
+  .cost-example__wrap {
+    margin-bottom: 35px;
+  }
+  .cost-example__summary {
+    width: 330px;
+    text-align: left;
+    margin: 0;
+  }
+  .cost-example__summary span {
+    display: inline;
+    margin-left: 59px;
+  }
+  .cost-example__description,
+  .cost-example__time-description {
+    background-color: @color-footer;
+  }
+}
