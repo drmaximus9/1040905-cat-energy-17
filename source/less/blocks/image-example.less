@@ -1,31 +1,79 @@
+.image-example {
+  width: 100%;
+  padding: 0;
+  // padding-right: 20px;
+  // padding-left: 20px;
+  margin: 0 auto;
+}
 .image-example__after {
   display: none;
 
 }
-// .image-example__before {
-//   position: relative;
-//   width: 100%;
-//   min-height: 240px; ;
-// }
+
 .image-example__before img {
 
   width: 320px;
   height: 240px;
-  margin-right: 10px;
+  margin-right: 0px;
+
 
 }
 @media (min-width: @tablet-width) {
-  .image-example__before img {
+  .image-example {
+    display: flex;
+    margin: 0 auto;
 
+  }
+  .image-example__image-wrap-before {
+    width: 353px;
+    overflow: hidden;
+  }
+  .image-example__image-wrap-after {
+
+    width: 345px;
+    overflow: hidden;
+  }
+  .image-example__after {
+    display: block;
+  }
+  .image-example__before img {
+    max-width: none;
     width: 690px;
     height: 517px;
     margin-left: 16px;
+
+  }
+  .image-example__after img {
+    display: block;
+    max-width: none;
+    width: 690px;
+    height: 517px;
+    margin-left: -337px;
 
   }
 }
 @media (min-width: @desktop-width) {
   .image-example__before img {
     margin: 0;
+
+  }
+  .image-example__image-wrap-before {
+    width: 362px;
+
+  }
+  .image-example__image-wrap-after {
+
+    width: 345px;
+
+  }
+  .image-example__before img {
+
+    margin-left: -1px;
+
+  }
+  .image-example__after img {
+
+    margin-left: -364px;
 
   }
 }

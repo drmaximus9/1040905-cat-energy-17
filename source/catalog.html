@@ -307,9 +307,115 @@
               </ul>
         </div>
       </section>
+      <section class="additional-goods">
+        <h2 class="additional-goods__title">Дополнительные товары</h2>
+        <div class="additional-goods__goods-wrap">
+          <ul class="additional-goods__list goods-list">
+            <li class="goods-list__item">
+              <div class="goods-list__item-wrap">
+                <div class="goods-list__item-wrap-first">
+                  <h3 class="goods-list__item-title">сахарозаменитель</h3>
+                  <div class="goods-list__item-wrap-second">
+                     <p class="goods-list__item-description">
+                       1 упаковка (100г)
+                     </p>
+                     <p class="goods-list__item-value">
+                       200 Р.
+                     </p>
+                  </div>
+                </div>
+                <a class="goods-list__item-button" href="#"><span>заказать</span></a>
+              </div>
+            </li>
+            <li class="goods-list__item">
+                <div class="goods-list__item-wrap">
+                  <div class="goods-list__item-wrap-first">
+                    <h3 class="goods-list__item-title">питьевая вода</h3>
+                    <div class="goods-list__item-wrap-second">
+                       <p class="goods-list__item-description">
+                         5 литров
+                       </p>
+                       <p class="goods-list__item-value">
+                         50 Р.
+                       </p>
+                    </div>
+                  </div>
+                  <a class="goods-list__item-button" href="#"><span>заказать</span></a>
+                </div>
+              </li>
+              <li class="goods-list__item">
+                  <div class="goods-list__item-wrap">
+                    <div class="goods-list__item-wrap-first">
+                      <h3 class="goods-list__item-title">молоко</h3>
+                      <div class="goods-list__item-wrap-second">
+                         <p class="goods-list__item-description">
+                           1 литр
+                         </p>
+                         <p class="goods-list__item-value">
+                           100 Р.
+                         </p>
+                      </div>
+                    </div>
+                    <a class="goods-list__item-button" href="#"><span>заказать</span></a>
+                  </div>
+                </li>
+                <li class="goods-list__item">
+                    <div class="goods-list__item-wrap">
+                      <div class="goods-list__item-wrap-first">
+                        <h3 class="goods-list__item-title">витамины</h3>
+                        <div class="goods-list__item-wrap-second">
+                           <p class="goods-list__item-description">
+                             1 упаковка (30г)
+                           </p>
+                           <p class="goods-list__item-value">
+                             300 Р.
+                           </p>
+                        </div>
+                      </div>
+                      <a class="goods-list__item-button" href="#"><span>заказать</span></a>
+                    </div>
+                  </li>
+          </ul>
+          <div class="additional-goods__image goods-image">
+            <picture>
+                <source media="(min-width: 1300px)" srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.jpg 1x, img/gift-photo-tablet@2x.jpg 2x">
+                  <img src="img/gift-photo-mobile@1x.jpg" srcset="img/gift-photo-mobile@2x.jpg 2x"
+                  width="280" height="289" alt="сумка для кота">
+            </picture>
+            <p class="goods-image__slogan">
+                Закажите все<br>
+                и получите чехол для кота в подарок!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="invite-contacts invite-contacts--page-catalog">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="invite-contacts__wrap">
+            <p class="invite-contacts__invite">
+                приглашаем<br>
+                к сотрудничеству
+                дилеров!
+            </p>
+            <p class="invite-contacts__contacts">
+                ул. Большая Конюшенная, д. 19/8
+                <span >Санкт-Петербург</span>
+            </p>
+          </div>
+          <div class="invite-contacts__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4s
+              IDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565864947359!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <picture>
+                    <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+                    <img  src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="карта">
+                </picture>
+          </div>
+        </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--catalog-page">
         <div class="page-footer__wrap-container">
             <a class="page-footer__page-footer-logo" href="index.html">
                 <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="логотип CAT ENERGY">
@@ -353,7 +459,6 @@
                   <svg  class="footer-development__image" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
                     <use xLink:href="#logo-HTMLAcademy"></use>
                   </svg>
-                  <!-- <img class="footer-development__image" src="img/htmlacademy.svg" width="27" height="34" alt="logo-HTMLAcademy"> -->
                 </a>
               </div>
         </div>
