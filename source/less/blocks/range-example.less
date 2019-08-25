@@ -1,25 +1,33 @@
 .range-example {
   margin-top: 29px;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
 }
 .range-example__controls {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-
+}
+.range-example__before {
   font-family: "Oswald","Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-}
-.range-example__before {
+  border: none;
+  background-color: transparent;
   margin-right: 0px;
-  margin-left: 55px;
+  margin-left: 52px;
 }
 .range-example__after {
+  font-family: "Oswald","Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
   margin-left: 0px;
-  margin-right: 50px;
+  margin-right: 47px;
 }
 .range-example__scale {
   width: 84px;
@@ -33,16 +41,18 @@
 
 }
 .range-example__bar {
+  display: block;
   width: 40%;
   height: 6px;
   background-color: @color-green-button;
   border-radius: 10px;
   margin: 4px 6px;
+  border: none;
 }
 @media (min-width: @tablet-width) {
   .range-example {
     margin-top: 27px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
   }
   .range-example__controls {
     font-size: 20px;
@@ -61,7 +71,7 @@
     background-color: @color-page;
     border: 1px solid #dcdcdc;
     border-radius: 50px;
-    box-shadow: 1px 2px 2px 1px rgba(0, 1, 1, 0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0, 1, 1, 0.15);
     margin-left: 198px;
     margin-top: -17px;
     &::before {
@@ -69,22 +79,46 @@
       position: absolute;
       width: 8px;
       height: 8px;
-      top: 13px;
-      right: 13px;
+      top: 12px;
+      right: 12px;
       border-radius: 50%;
       background-color:  @color-green-button;
 
     }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 2px 3px 1px rgba(0, 1, 1, 0.25);
+    }
+    &:active {
+
+      border: 2px solid @color-green-button;
+    }
 
   }
   .range-example__before {
-    margin-left: 57px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 55px;
     margin-top: -10px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #dcdcdc;
+    border-bottom: 1px dotted #dcdcdc;
+  }
+  .range-example__before:hover,
+  .range-example__after:hover {
+    border-bottom: 1px solid #989898;
+  }
+  .range-example__before:focus,
+  .range-example__after:focus {
+    border: none;
+  }
+  .range-example__before:active,
+  .range-example__after:active {
+    border: none;
   }
   .range-example__after {
-    margin-right: 58px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 56px;
     margin-top: -10px;
     padding-bottom: 5px;
     border-bottom: 1px solid #dcdcdc;
@@ -97,13 +131,13 @@
     margin-left: 43px;
   }
   .range-example__before {
-    margin-left: 35px;
+    margin-left: 28px;
   }
   .range-example__after {
     margin-right: 62px;
-    margin-left: 22px;
+    margin-left: 15px;
   }
   .range-example__scale {
-    margin-left: 22px;
+    margin-left: 18px;
   }
 }

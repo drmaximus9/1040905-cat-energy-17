@@ -36,14 +36,18 @@
   .additional-goods {
     border-top: 3px solid @color-green-button;;
   }
+  .additional-goods__title-wrap {
+    width: 708px;
+    margin: 0 auto;
+  }
   .additional-goods__title {
     width: 338px;
     font-size: 36px;
     line-height: 36px;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-top: -55px;
     margin-bottom: 46px;
-    padding:28px 37px 34px 37px ;
+    padding:28px 37px 34px 36px ;
     background-color: @color-page;
     &::before {
       display: none;
@@ -52,11 +56,15 @@
 }
 @media (min-width: @desktop-width) {
   .additional-goods__title {
-  margin-left: 72px;
+  margin-left: -38px;
+  margin-top: -53px;
   padding:28px 39px 34px 37px ;
   }
   .additional-goods__goods-wrap {
     width: 1220px;
     display: flex;
+  }
+  .additional-goods__title-wrap {
+    width: 1220px;
   }
 }

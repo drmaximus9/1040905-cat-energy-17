@@ -12,7 +12,7 @@
 .goods-list__item-wrap {
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 .goods-list__item-title {
   font-size: 16px;
@@ -34,10 +34,11 @@
   line-height: 14px;
   font-family:"Arial", sans-serif;
   font-weight: 400;
+  color: #444444;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 .goods-list__item-value {
   width: 140px;
@@ -46,10 +47,11 @@
   font-family:"Arial", sans-serif;
   font-weight: 400;
   text-align: right;
+  color: #444444;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   // margin-left: 130px;
   margin-right: 0;
 }
@@ -58,12 +60,22 @@
   width: 280px;
 
   text-decoration: none;
+  text-transform: uppercase;
   color: @color-page;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
   background-color: @color-green-button;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+  &:focus {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: #81bd5d;
+  }
 }
 .goods-list__item-button span {
 
@@ -72,7 +84,7 @@
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
 }
 @media (min-width: @tablet-width) {
@@ -83,7 +95,7 @@
   .goods-list__item-wrap {
     width: 632px;
     padding: 28px 38px;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
   }
   .goods-list__item-wrap-first {
     display: flex;
@@ -121,8 +133,9 @@
   }
   .goods-list__item-button {
     width: 633px;
-
-
+  }
+  .goods-list__item-button span {
+    margin-right: 4px;
   }
 }
 @media (min-width: @desktop-width) {
@@ -133,7 +146,7 @@
     margin-left: 0px;
     padding: 0;
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
 
   }
   .goods-list__item {
@@ -158,6 +171,9 @@
     width: 245px;
     margin-left: 38px;
     margin-right: 0;
+  }
+  .goods-list__item-button span {
+    margin: 0;
   }
   .goods-list__item-description {
     text-align: left;

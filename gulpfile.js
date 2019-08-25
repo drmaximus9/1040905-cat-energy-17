@@ -33,7 +33,7 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 gulp.task("sprite", function(){
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/svg/*.svg")
   .pipe(svgstore({
     inLineSvg: true
   }))
