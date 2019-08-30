@@ -1,9 +1,9 @@
-.page-header {
+.page-header--main {
   background-color: @color-page;
   width: 100%;
 
 }
-.page-header--form-header {
+.page-header--form {
   margin-bottom: 17px;
 }
 
@@ -34,12 +34,17 @@
   }
 }
 @media (min-width: @tablet-width) {
-  .page-header {
+  .page-header--main {
     padding-top: 18px;
   }
-  .page-header--main-header {
+  .page-header--catalog {
     border: none;
+    padding-top: 18px;
 
+  }
+  .page-header--form {
+    margin-bottom: 56px;
+    padding-top: 18px;
   }
   .page-header__wrap-container {
    width: 708px;
@@ -65,23 +70,28 @@
   }
 }
 @media (min-width: @desktop-width) {
-  .page-header--main-header {
-    padding-top: 57px;
+  .page-header--main {
+    padding: 0;
+    margin-bottom: -122px;
+  }
+  .page-header--catalog {
+    margin: 0;
+    padding-top: 0px;
+    color: @color-text;
+  }
+  .page-header--form {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 66px;
+    color: @color-text;
+
   }
   .page-header__wrap-container {
     width: 1220px;
     margin: 0 auto;
   }
-  .page-header {
-    padding: 0;
-    margin-bottom: -122px;
-  }
   .page-header__logo {
     padding-left: 0px;
-  }
-  .page-header--main-header {
-    margin: 0;
-    color: @color-text;
   }
   .page-header__logo-image {
     width: 202px;

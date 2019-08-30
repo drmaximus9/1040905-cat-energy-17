@@ -5,6 +5,9 @@
 .invite-contacts--page-catalog {
   margin-top: 75px;
 }
+.invite-contacts--page-form {
+  margin-top: 30px;
+}
 .invite-contacts__wrap {
   display: flex;
 
@@ -49,18 +52,7 @@
   width: 100%;
   z-index: 2;
 }
-// .invite-contacts__map::before {
-//   content: "";
-//   position: absolute;
 
-//   background-image: url(../img/map-pin.png);
-//   background-position: 0 0;
-//   background-repeat: no-repeat;
-//   width: 124px;
-//   height: 106px;
-//   top: 84px;
-//   right: 98px;
-// }
 @media (min-width: @tablet-width) {
   .invite-contacts__wrap {
     width: 640px;
@@ -68,6 +60,10 @@
   }
   .invite-contacts--page-catalog {
     margin-top: 144px;
+    background-color: @color-footer;
+  }
+  .invite-contacts--page-form {
+    margin-top: 73px;
     background-color: @color-footer;
   }
   .invite-contacts__invite {
@@ -120,6 +116,10 @@
     left: 110px;
     background-color: @color-page;
     z-index: 3;
+  }
+  .invite-contacts--page-form {
+    margin-top: 84px;
+
   }
   .invite-contacts__invite {
     padding-left: 76px;

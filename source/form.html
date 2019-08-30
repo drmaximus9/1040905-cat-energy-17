@@ -9,7 +9,7 @@
   </head>
   <body>
     <div style="display: none"><include src="build/img/sprite.svg"></include></div>
-    <header class="page-header page-header--form-header">
+    <header class="page-header page-header--form">
       <div class="page-header__wrap-container">
           <nav class="main-nav main-nav--opened main-nav--nojs">
             <h2 class="visually-hidden">Навигация</h2>
@@ -39,7 +39,7 @@
       </div>
     </header>
     <main class="main-form-page">
-      <section class="form">
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <div class="form__wrap-first">
           <h2 class="form__title">Подбор программы</h2>
           <p class="form__title-description">
@@ -51,72 +51,87 @@
           <fieldset class="form__fieldset form__fieldset--data">
             <div class="form__wrap-data">
               <label class="form__label form__label--text-name" for="cat-name">имя:*</label>
-              <input type="text" class="form__control form__control--text-name" id="cat-name" placeholder="БАРСИК">
+              <input type="text" class="form__control-text form__control-text--text-name" name="cat-name" id="cat-name" placeholder="БАРСИК">
             </div>
             <div class="form__wrap-data">
               <label class="form__label form__label--text-weight" for="cat-weight">вес (кг):*</label>
-              <input type="text" class="form__control form__control--text-weight" id="cat-weight" placeholder="7">
+              <input type="text" class="form__control-text form__control-text--text-weight" name="cat-weight" id="cat-weight" placeholder="7">
             </div>
             <div class="form__wrap-data">
-              <label class="form__label form__label--text-age" for="cat-age">возраст (лет):</label>
-              <input type="text" class="form__control form__control--text-age" id="cat-age" placeholder="7">
+              <label class="form__label form__label--text-age" for="cat-age">возраст&nbsp;(лет):</label>
+              <input type="text" class="form__control-text form__control-text--text-age" name="cat-age" id="cat-age" placeholder="7">
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--choice">
-            <div class="form__wrap-third">
-              <div class="form__wrap-choice">
-                  <input type="radio" class="form__control form__control--radio" id="cat-losing" checked>
+            <ul class="form__choice-list">
+              <li class="form__item-choice">
+                  <input type="radio" class="form__control form__control--radio" name="item-choice" value="cat-losing" id="cat-losing" checked>
                   <label class="form__label form__label--radio" for="cat-losing">похудение</label>
-                  <span class="form__radio-indicator"></span>
-              </div>
-              <div class="form__wrap-choice">
-                  <input type="radio" class="form__control form__control--radio" id="cat-gain">
+              </li>
+              <li class="form__item-choice">
+                  <input type="radio" class="form__control form__control--radio" name="item-choice" value="cat-gain"  id="cat-gain">
                   <label class="form__label form__label--radio" for="cat-gain">набор массы</label>
-                  <span class="form__radio-indicator"></span>
-              </div>
-              <div class="form__wrap-choice">
-                  <input type="radio" class="form__control form__control--radio" id="cat-unknown">
+              </li>
+              <li class="form__item-choice">
+                  <input type="radio" class="form__control form__control--radio" name="item-choice" value="cat-unknown" id="cat-unknown">
                   <label class="form__label form__label--radio" for="cat-unknown">не знаю (нужен ваш совет)</label>
-                  <span class="form__radio-indicator"></span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--contacts-data">
-          <h3 class="form__contacts-data-title">контактные данные (владельца кота)</h3>
-          <label class="form__label form-label--mail" for="email">e-mail:*</label>
-          <input type="email" class="form__control form__control--email" id="email" placeholder="kuklachev@gmail.com">
-          <label class="form__label form-label--tel" for="tel">телефон:*</label>
-          <input type="tel" class="form__control form__control--tel" id="tel" placeholder="8 (960) 900-60-90">
+          <h3 class="form__fieldset-title form__fieldset-title--contacts-data-title">Контактные данные (владельца кота)</h3>
+          <div class="form__contacts-data-wrap">
+            <div class="form__wrap-mail-tel">
+                <label class="form__label form__label--mail" for="email">e-mail:*</label>
+                <input type="email" class="form__control-text form__control-text--email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                <svg class="form__email-icon" width="17" height="13"><use xlink:href="#icon-mail"></use></svg>
+            </div>
+            <div class="form__wrap-mail-tel">
+                <label class="form__label form__label--tel" for="tel">телефон:*</label>
+                <input type="tel" class="form__control-text form__control-text--tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+                <svg class="form__tel-icon" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>
+            </div>
+          </div>
         </fieldset>
         <div class="form__comments">
-          <h3 class="form__title-comments">комментарий</h3>
-          <textarea class="form__control form__control--textarea-comments" rows="3" placeholder="Расскажите обо всех повадках кота">
+          <h3 class="form__fieldset-title form__fieldset-title--title-comments">Комментарий</h3>
+          <textarea class="form__control form__control--textarea-comments" name="comments" rows="8" placeholder="Расскажите обо всех повадках кота">
           </textarea>
         </div>
         <div class="form__additionally">
-          <h3 class="form__additionally-title">доплнительно</h3>
+          <h3 class="form__fieldset-title form__fieldset-title--additionally-title">дополнительно</h3>
           <fieldset class="form__fieldset form__fieldset--additionally">
-              <input type="checkbox" class="form__control form__control--checkbox" id="sugar">
-              <label class="form__label form__label--checkbox" for="sugar">сахарозаменитель</label>
-              <input type="checkbox" class="form__control form__control--checkbox" id="water">
-              <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
-              <input type="checkbox" class="form__control form__control--checkbox" id="milk">
-              <label class="form__label form__label--checkbox" for="milk">молоко</label>
-              <input type="checkbox" class="form__control form__control--checkbox" id="vitamins">
-              <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
+            <div class="form__additionally-wrap">
+                <div class="form__wrap-additionally">
+                    <input type="checkbox" class="form__control form__control--checkbox" name="additionally"  id="sugar" checked>
+                    <label class="form__label form__label--checkbox" for="sugar">сахарозаменитель</label>
+                </div>
+                <div class="form__wrap-additionally">
+                    <input type="checkbox" class="form__control form__control--checkbox" name="additionally" id="water">
+                    <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
+                </div>
+                <div class="form__wrap-additionally">
+                    <input type="checkbox" class="form__control form__control--checkbox" name="additionally" id="milk">
+                    <label class="form__label form__label--checkbox" for="milk">молоко</label>
+                </div>
+                <div class="form__wrap-additionally">
+                    <input type="checkbox" class="form__control form__control--checkbox" name="additionally" id="vitamins">
+                    <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
+                </div>
+            </div>
           </fieldset>
           <div class="form__summary">
             <button type="submit" class="form__button">
               отправить заявку
             </button>
             <p class="form__notes">
-              *- обязательные поля
+              *- Обязательные поля
             </p>
           </div>
         </div>
-      </section>
-      <section class="invite-contacts invite-contacts--page-catalog">
+      </form>
+      <section class="invite-contacts invite-contacts--page-form">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="invite-contacts__wrap">
             <p class="invite-contacts__invite">
@@ -148,8 +163,7 @@
               <ul class="page-footer__social social-list">
                 <li class="social-list__item">
                   <a class="social-list__link social-list__link--vk" href="#">
-                   <svg  width="22" height="12" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                   <svg  width="22" height="12">
                       <use xLink:href="#icon-vk"></use>
                    </svg>
                     <span class="visually-hidden">ВК</span>
@@ -157,8 +171,7 @@
                 </li>
                 <li class="social-list__item">
                   <a class="social-list__link social-list__link--instagram" href="#">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
+                    <svg width="16" height="16">
                       <use xLink:href="#icon-insta"></use>
                    </svg>
                     <span class="visually-hidden">Инстаграм</span>
@@ -166,10 +179,8 @@
                 </li>
                 <li class="social-list__item">
                   <a class="social-list__link social-list__link--fb" href="#">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;"  xml:space="preserve">
+                    <svg width="10" height="19">
                       <use xLink:href="#icon-fb"></use>
-
                    </svg>
                     <span class="visually-hidden">Фэйсбук</span>
                   </a>

@@ -55,6 +55,11 @@
     min-height: 35px;
     padding-bottom: 11px;
   }
+  .site-list--form {
+    border-bottom: none;
+    padding-bottom: 9px;
+    padding-top: 2px;
+  }
   .site-list__item--active {
     border-bottom: 2px solid @color-green-button;
   }
@@ -146,10 +151,26 @@
       color: #b7b7b7;
     }
   }
-  .page-header--main-header .site-list__link {
+  .site-list--form a[href] {
+    &:hover,
+    &:focus {
+      color: #707070;
+    }
+
+    &:active {
+      color: #b7b7b7;
+    }
+  }
+  .page-header--catalog .site-list__link {
     color: @color-text;
   }
-  .page-header--main-header .site-list__item--active {
+  .page-header--catalog .site-list__item--active {
+    border-bottom: 2px solid @color-green-button;
+  }
+  .page-header--form .site-list__link {
+    color: @color-text;
+  }
+  .page-header--form .site-list__item--active {
     border-bottom: 2px solid @color-green-button;
   }
 
