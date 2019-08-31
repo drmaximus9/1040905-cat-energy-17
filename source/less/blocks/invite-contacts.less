@@ -105,15 +105,20 @@
 
 }
 @media (min-width: @desktop-width) {
-  .invite-contacts {
+
+  .invite-contacts__wrap {
+    display: block;
+    width: 1220px;
+    margin: 0 auto;
     position: relative;
   }
-  .invite-contacts__wrap {
+  .invite-contacts__wrap-wrap {
     position: absolute;
+    display: flex;
     width: 570px;
     height: 201px;
     top: 93px;
-    left: 110px;
+    left: 0px;
     background-color: @color-page;
     z-index: 3;
   }
