@@ -1,1 +1,1 @@
- var i = h.getAttribute ("media"); if (h.getAttribute ("srcset") && (! i || g.matchesMedia (i))) {var j = g.verifyTypeSupport (h); if (j ===! 0) {c = h; break} if ("pending" === j) return! 1}}}} return c}, f (), e. _ = g, d (e)} (окно, окно. документ, новое окно. Изображение);
+/* stylelint-disable */var i = h.getAttribute ("media"); if (h.getAttribute ("srcset") && (! i || g.matchesMedia (i))) {var j = g.verifyTypeSupport (h); if (j ===! 0) {c = h; break} if ("pending" === j) return! 1}}}} return c}, f (), e. _ = g, d (e)} (окно, окно. документ, новое окно. Изображение);

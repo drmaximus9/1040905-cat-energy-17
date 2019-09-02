@@ -1,8 +1,8 @@
 .main-instruction {
   width: 100%;
   margin-bottom: 20px;
-
 }
+
 .main-instruction__list {
 
   display: flex;
@@ -16,12 +16,14 @@
   padding: 0;
   margin-top: 30px;
 }
+
 .main-instruction__item {
   position: relative;
   width: 200px;
   margin-bottom: 26px;
   padding-left: 80px;
 }
+
 .main-instruction__item span {
   display: none;
 }
@@ -37,6 +39,7 @@
   color: @color-text;
   margin-top: -3px;
 }
+
 .main-instruction__item--first::before {
   content: "";
 
@@ -46,8 +49,8 @@
   top: -3px;
   left: 0;
   background-color: @color-green-button;
-
 }
+
 .main-instruction__item--first::after {
   content: "";
 
@@ -61,11 +64,13 @@
   left: 6px;
   top: 1px;
   z-index: 2;
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/advantage-leaf@2x.png");
     background-size: 50px 50px;
   }
 }
+
 .main-instruction__item--second::before {
   content: "";
 
@@ -75,8 +80,8 @@
   top: -3px;
   left: 0;
   background-color: @color-green-button;
-
 }
+
 .main-instruction__item--second::after {
   content: "";
 
@@ -90,11 +95,13 @@
   left: 6px;
   top: 1px;
   z-index: 2;
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/advantage-powder@2x.png");
     background-size: 50px 50px;
   }
 }
+
 .main-instruction__item--third::before {
   content: "";
 
@@ -104,8 +111,8 @@
   top: -3px;
   left: 0;
   background-color: @color-green-button;
-
 }
+
 .main-instruction__item--third::after {
   content: "";
 
@@ -119,11 +126,13 @@
   left: 4px;
   top: 1px;
   z-index: 2;
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/advantage-dining@2x.png");
     background-size: 50px 50px;
   }
 }
+
 .main-instruction__item--fourth::before {
   content: "";
 
@@ -133,8 +142,8 @@
   top: -3px;
   left: 0;
   background-color: @color-green-button;
-
 }
+
 .main-instruction__item--fourth::after {
   content: "";
 
@@ -148,19 +157,23 @@
   left: 6px;
   top: 1px;
   z-index: 2;
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/advantage-clock@2x.png");
     background-size: 50px 50px;
   }
 }
+
 .main-instruction__wrap-container {
   width: 280px;
   margin: 0 auto;
 }
+
 @media (min-width: @tablet-width) {
   .main-instruction {
     margin-bottom: -31px;
   }
+
   .main-instruction__list {
     display: flex;
     flex-direction: row;
@@ -174,8 +187,8 @@
     font-size: 60px;
     line-height: 60px;
     padding-top: 18px;
-
   }
+
   .main-instruction__item {
     position: relative;
     width: 245px;
@@ -186,8 +199,8 @@
 
     font-size: 16px;
     line-height: 24px;
-
   }
+
   .main-instruction__item span {
     display: inline;
     position: absolute;
@@ -199,6 +212,7 @@
     color: #f2f2f2;
     z-index: -1;
   }
+
   .main-instruction__item--first::before {
     content: "";
 
@@ -208,8 +222,8 @@
     top: 0;
     left: 0;
     background-color: @color-green-button;
-
   }
+
   .main-instruction__item--first::after {
     content: "";
 
@@ -237,11 +251,11 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: @color-green-button;
-
   }
+
   .main-instruction__item--second::after {
     content: "";
 
@@ -262,17 +276,18 @@
       background-size: 40px 40px;
     }
   }
+
   .main-instruction__item--third::before {
     content: "";
 
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
+    top: 0;
     left: 0;
     background-color: @color-green-button;
-
   }
+
   .main-instruction__item--third::after {
     content: "";
 
@@ -293,17 +308,18 @@
       background-size: 40px 40px;
     }
   }
+
   .main-instruction__item--fourth::before {
     content: "";
 
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: @color-green-button;
-
   }
+
   .main-instruction__item--fourth::after {
     content: "";
 
@@ -330,21 +346,26 @@
     margin: 0 auto;
   }
 }
+
 @media (min-width: @desktop-width) {
   .main-instruction {
     margin-top: 77px;
   }
+
   .main-instruction__title {
     padding: 0;
   }
+
   .main-instruction__wrap-container {
     width: 1220px;
     margin: 0 auto;
   }
+
   .main-instruction__item {
     width: 245px;
-    margin-right: 0px;
+    margin-right: 0;
   }
+
   .main-instruction__item--first::before {
     content: "";
 
@@ -354,8 +375,8 @@
     top: 0;
     left: 0;
     background-color: @color-green-button;
-
   }
+
   .main-instruction__item--first::after {
     content: "";
 
@@ -383,11 +404,11 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: @color-green-button;
-
   }
+
   .main-instruction__item--second::after {
     content: "";
 
@@ -408,17 +429,18 @@
       background-size: 40px 40px;
     }
   }
+
   .main-instruction__item--third::before {
     content: "";
 
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
+    top: 0;
     left: 0;
     background-color: @color-green-button;
-
   }
+
   .main-instruction__item--third::after {
     content: "";
 
@@ -439,17 +461,18 @@
       background-size: 40px 40px;
     }
   }
+
   .main-instruction__item--fourth::before {
     content: "";
 
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: @color-green-button;
-
   }
+
   .main-instruction__item--fourth::after {
     content: "";
 

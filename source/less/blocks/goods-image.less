@@ -1,5 +1,6 @@
 .goods-image {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -11,9 +12,9 @@
     height: 60px;
     top: 65px;
     right: 112px;
-
   }
 }
+
 .goods-image__slogan {
   font-size: 16px;
   line-height: 20px;
@@ -22,44 +23,50 @@
   color: @color-page;
   text-align: center;
   width: 170px;
-  margin: 0;
   padding: 0;
   margin: 0 auto;
   margin-top: -104px;
 }
+
 @media (min-width: @tablet-width) {
   .goods-image {
     margin-top: 69px;
+
     &::before {
       top: 65px;
       left: 90px;
     }
   }
+
   .goods-image img {
     width: 708px;
     height: 200px;
   }
+
   .goods-image__slogan {
     text-align: left;
     margin-left: 423px;
     margin-top: -131px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .goods-image {
     width: 245px;
     margin-top: 2px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: auto;
+
     &::before {
       left: 96px;
     }
   }
+
   .goods-image img {
     width: 245px;
     height: 289px;
-
   }
+
   .goods-image__slogan {
     text-align: center;
     margin-left: 36px;
