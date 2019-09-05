@@ -4,93 +4,83 @@
   justify-content: flex-start;
   margin-top: 5px;
 }
-
 .footer-development__link {
   text-decoration: none;
   color: @color-description-text;
   font-size: 16px;
   line-height: 16px;
-}
+  color:  #555555;
 
+}
 .footer-development__link--academy {
   width: 195px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 35px;
-  padding-left: 0;
-
+  padding-left: 0px;
   &:active {
     opacity: 0.3;
   }
 }
-
 .footer-development__image {
   width: 43px;
   height: 41px;
-  padding-top: 14px;
+  padding-top: 16px;
   padding-left: 58px;
   margin-right: -8px;
+  fill:#555555;
+  &:hover,
+  &:focus {
+    fill: #a4d189;
+  }
+  &:active {
+    fill-opacity: 0.3;
+  }
 }
-
-.footer-development__image:focus {
-  fill: #68b738;
-}
-
-.footer-development__image:hover {
-  fill: #68b738;
-}
-
-.footer-development__image:active {
-  fill-opacity: 0.3;
-}
-
 @media (min-width: @tablet-width) {
   .footer-development__link--academy {
     font-size: 16px;
     line-height: 16px;
     text-align: right;
     width: 195px;
-    padding-top: 0;
+    padding-top: 0px;
     padding-right: 15px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
     margin-top: 57px;
   }
-
   .footer-development__image {
     width: 43px;
     height: 41px;
-    padding-top: 0;
-    padding-left: 0;
-    margin-top: 46px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-top: 48px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .footer-development {
-    margin-left: 0;
+    margin-left: 0px;
     margin-right: -7px;
   }
-
   .footer-development__image {
     width: 43px;
     height: 41px;
     margin-right: -8px;
-    margin-left: 4px;
+    margin-left: 2px;
     padding-left: 10px;
   }
-
   .footer-development__link-image {
-    margin-left: 0;
-    margin-right: 0;
-  }
+    margin-left: 0px;
+    margin-right: 0px;
 
+
+  }
   .footer-development__link--academy {
     padding: 0;
-    margin-right: 0;
+    margin-right: 0px;
     margin-left: 18px;
-    padding-left: 11px;
+    padding-left: 20px;
   }
 }

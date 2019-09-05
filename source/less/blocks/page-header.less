@@ -1,111 +1,90 @@
-.page-header--main {
+.page-header {
   background-color: @color-page;
   width: 100%;
-}
 
-.page-header--form {
-  margin-bottom: 17px;
 }
 
 .page-header__wrap-container {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-}
+  // display: flex;
 
+}
 .page-header__logo {
   width: 240px;
   display: inline-block;
   padding-bottom: 8px;
   padding-top: 12px;
   padding-left: 14px;
-}
 
+}
 .page-header__logo-image {
+
   &:hover {
     opacity: 0.8;
   }
-
   &:focus {
     opacity: 0.8;
   }
-
   &:active {
     opacity: 0.6;
   }
 }
-
 @media (min-width: @tablet-width) {
-  .page-header--main {
+  .page-header {
     padding-top: 18px;
   }
-
-  .page-header--catalog {
+  .page-header--main-header {
     border: none;
-    padding-top: 18px;
-  }
 
-  .page-header--form {
-    margin-bottom: 56px;
-    padding-top: 18px;
   }
-
   .page-header__wrap-container {
-    width: 708px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+   width: 708px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
   }
-
   .page-header__logo {
     margin-top: 8px;
     border: none;
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
   }
-
   .page-header__logo-image {
     width: 173px;
     height: 58px;
     padding: 0;
-    padding-left: 0;
-    padding-top: 0;
+    padding-left: 0px;
+    padding-top: 0px;
+
+
   }
 }
-
 @media (min-width: @desktop-width) {
-  .page-header--main {
-    padding: 0;
-    margin-bottom: -122px;
+  .page-header--main-header {
+    padding-top: 57px;
   }
-
-  .page-header--catalog {
-    margin: 0;
-    padding-top: 0;
-    color: @color-text;
-  }
-
-  .page-header--form {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 66px;
-    color: @color-text;
-  }
-
   .page-header__wrap-container {
     width: 1220px;
     margin: 0 auto;
   }
-
-  .page-header__logo {
-    padding-left: 0;
+  .page-header {
+    padding: 0;
+    margin-bottom: -122px;
   }
-
+  .page-header__logo {
+    padding-left: 0px;
+  }
+  .page-header--main-header {
+    margin: 0;
+    color: @color-text;
+  }
   .page-header__logo-image {
     width: 202px;
     height: 59px;
     margin: 0;
     margin-top: px;
-    padding-left: 0;
+    padding-left: 0px;
   }
 }
