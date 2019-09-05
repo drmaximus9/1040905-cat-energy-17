@@ -1,18 +1,19 @@
 .choice-program {
   width: 100%;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: 0 0;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 0%, #64a83b 64%, transparent 64%, transparent 100%);
+  background-position: 50% 0;
   background-repeat: no-repeat;
-  width: 320px;
+  background-size: 320px 305px, auto auto;
   min-height: 305px;
   margin: 0 auto;
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
 }
-.choice-program__title {
 
+.choice-program__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -22,6 +23,7 @@
   color: @color-page;
   padding-top: 30px;
 }
+
 .choice-program__slogan {
   font-size: 14px;
   line-height: 14px;
@@ -33,6 +35,7 @@
   padding: 0;
   margin-top: 25px;
 }
+
 .choice-program__button {
   width: 280px;
   display: block;
@@ -40,18 +43,21 @@
   color: @color-page;
   text-decoration: none;
   background-color: @color-green-button;
-  padding: 0px 0px;
+  padding: 0 0;
+
   &:hover {
     background-color: #5eaa2f;
   }
+
   &:focus {
     background-color: #5eaa2f;
   }
+
   &:active {
     color: #81bd5d;
   }
-
 }
+
 .choice-program__button span {
   width: 135px;
   font-size: 14px;
@@ -60,25 +66,28 @@
   display: block;
   padding: 11px 72px;
 }
+
 .choice-program__wrap-container {
   width: 280px;
   margin: 0 auto;
 }
-.choice-program__main-product-image {
-  padding-left: 0px;
 
+.choice-program__main-product-image {
+  padding-left: 0;
 }
+
 .choice-program__image {
   margin: 0;
   padding: 0;
   margin-top: 27px;
 }
+
 @media (min-width: @tablet-width) {
   .choice-program {
     width: 100%;
     background-image: unset;
-
   }
+
   .choice-program__title {
     color: @color-text;
     font-size: 60px;
@@ -90,6 +99,7 @@
     padding-left: 87px;
     padding-top: 53px;
   }
+
   .choice-program__slogan {
     color: @color-text;
     font-size: 20px;
@@ -103,23 +113,20 @@
     width: 708px;
     margin: 0 auto;
   }
+
   .choice-program__main-product-image {
     width: 709px;
     height: 609px;
     margin-bottom: -595px;
-    margin-left: 0px;
-
-
-
-
+    margin-left: px;
   }
 
   .choice-program__image {
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: px;
     margin-top: 16px;
-
   }
+
   .choice-program__button {
     position: absolute;
     top: 30px;
@@ -128,18 +135,18 @@
     &:hover {
       background-color: #5eaa2f;
     }
+
     &:focus {
       background-color: #5eaa2f;
     }
+
     &:active {
       color: #81bd5d;
     }
     text-transform: uppercase;
     margin-left: 90px;
-
-
-
   }
+
   .choice-program__button span {
     width: 195px;
     font-size: 20px;
@@ -147,64 +154,66 @@
     padding: 16px 25px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .choice-program {
     width: 100%;
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 0%, transparent 50%, #64a83b 50%, #64a83b 100%);
     background-position: left calc(50% + 360px) top 0, left top;
-    background-repeat: no-repeat,repeat;
+    background-repeat: no-repeat, repeat;
     background-size: 720px 696px, auto auto;
     height: 696px;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, transparent 0%, transparent 50%, #64a83b 50%, #64a83b 100%);
       background-size: 720px 696px, auto auto;
     }
   }
+
   .choice-program__image {
     margin: 0;
   }
+
   .choice-program__main-product-image {
     width: 552px;
     height: 499px;
     padding-left: 450px;
-    padding-top: 0px;
+    padding-top: 0;
     margin-top: -262px;
     margin-bottom: 0;
-
-
-
   }
+
   .choice-program__title {
     width: 420px;
     padding-top: 221px;
     padding-left: 80px;
-
     text-align: left;
-
     font-size: 60px;
     line-height: 60px;
   }
+
   .choice-program__slogan {
+    width: 295px;
     text-align: left;
     padding-left: 80px;
     margin-top: 42px;
   }
+
   .choice-program__button {
     display: block;
-
     font-size: 20px;
     line-height: 20px;
     top: 240px;
-    left: 0px;
+    left: 0;
     width: 245px;
     text-align: center;
     margin-left: 79px;
     margin-top: -187px;
     padding: 0;
   }
+
   .choice-program__wrap-container {
     width: 1220px;
     margin: 0 auto;
-
   }
 }

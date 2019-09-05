@@ -4,8 +4,8 @@
   background-color: @color-footer;
   margin-bottom: 20px;
 }
-.method-item__title {
 
+.method-item__title {
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -16,18 +16,16 @@
   text-transform: uppercase;
   text-align: center;
   color: @color-text;
-
-
 }
 
 .method-item--losing .method-item__title {
   padding-top: 29px;
   padding-left: 11px;
 }
+
 .method-item--losing::before {
   content: "";
   position: absolute;
-
   width: 50px;
   height: 50px;
   background-color: @color-green-button;
@@ -35,10 +33,10 @@
   top: 24px;
   border-radius: 50%;
 }
+
 .method-item--losing::after {
   content: "";
   position: absolute;
-
   background-image: url("../img/icon-cat-slim.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -47,13 +45,11 @@
   left: 30px;
   top: 21px;
   z-index: 2;
-
-
 }
+
 .method-item--gain::before {
   content: "";
   position: absolute;
-
   width: 50px;
   height: 50px;
   background-color: @color-green-button;
@@ -61,10 +57,10 @@
   top: 23px;
   border-radius: 50%;
 }
+
 .method-item--gain::after {
   content: "";
   position: absolute;
-
   background-image: url("../img/icon-cat-pro.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -73,34 +69,36 @@
   left: 14px;
   top: 35px;
   z-index: 2;
-
-
 }
+
 .method-item--losing .method-item__description {
   padding-top: 6px;
   margin-left: 20px;
 }
+
 .method-item__description {
   width: 235px;
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
-  width: 235px;
   margin: 0;
   padding: 0;
   padding-bottom: 23px;
-  // padding-right: 25px;
-  // padding-left: 20px;
   margin-top: 23px;
   color: @color-description-text;
   border-bottom: 2px solid #d9d9d9;
 }
+
+.method-item__link:active {
+  opacity: 0.3;
+}
+
 .method-item--losing .method-item__link {
-  margin-top: 16px;
+  margin-top: 18px;
+
   &::before {
     content: "";
-
     position: absolute;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-position: 0 0;
@@ -109,38 +107,42 @@
     height: 11px;
     top: 3px;
     left: 117px;
-
   }
+
   &:hover::before {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     width: 33px;
     height: 11px;
   }
+
   &:focus::before {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     width: 33px;
     height: 11px;
   }
+
   &:active::before {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     width: 33px;
     height: 11px;
-    color: #b7b7b7;
   }
 }
+
 .method-item--gain .method-item__title {
   padding-top: 29px;
   padding-left: 39px;
 }
+
 .method-item--gain .method-item__description {
   padding-top: 7px;
   margin-left: 20px;
 }
+
 .method-item--gain .method-item__link {
   margin-top: 17px;
+
   &::before {
     content: "";
-
     position: absolute;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-position: 0 0;
@@ -150,27 +152,29 @@
     top: 3px;
     left: 115px;
   }
+
   &:hover::before {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     width: 33px;
     height: 11px;
   }
+
   &:focus::before {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     width: 33px;
     height: 11px;
   }
+
   &:active::before {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     width: 33px;
     height: 11px;
-    color: #b7b7b7;
   }
 }
+
 .method-item__link {
   position: relative;
   display: block;
-
   color: @color-text;
   font-size: 16px;
   line-height: 16px;
@@ -178,22 +182,19 @@
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-
   margin-top: 20px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
   padding-left: 20px;
-
-
 }
+
 @media (min-width: @tablet-width) {
   .method-item {
     position: relative;
     width: 708px;
-
     margin: 0 auto;
     margin-bottom: 30px;
-
   }
+
   .method-item__title {
     font-size: 36px;
     line-height: 37px;
@@ -201,27 +202,31 @@
     padding-left: 52px;
     padding-top: 80px;
   }
+
   .method-item--losing .method-item__title {
     padding-top: 73px;
     padding-left: 53px;
   }
+
   .method-item__description {
     font-size: 16px;
     line-height: 24px;
     padding-left: 52px;
     border: none;
   }
+
   .method-item--losing .method-item__description {
     width: 381px;
     padding: 0;
     margin-left: 52px;
     padding-top: 3px;
   }
+
   .method-item--losing .method-item__link {
     margin-top: 56px;
+
     &::before {
       content: "";
-
       position: absolute;
       background-image: url("../img/icon-right-arrow-long.svg");
       background-position: 0 0;
@@ -231,38 +236,43 @@
       top: 5px;
       left: 184px;
     }
+
     &:hover::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
     }
+
     &:focus::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
     }
+
     &:active::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
-      color: #b7b7b7;
     }
   }
+
   .method-item--gain .method-item__title {
     padding-top: 78px;
     padding-left: 53px;
   }
+
   .method-item--gain .method-item__description {
     width: 343px;
     padding: 0;
     margin-left: 52px;
     padding-top: 3px;
   }
+
   .method-item--gain .method-item__link {
     margin-top: 56px;
+
     &::before {
       content: "";
-
       position: absolute;
       background-image: url("../img/icon-right-arrow-long.svg");
       background-position: 0 0;
@@ -272,82 +282,68 @@
       top: 4px;
       left: 178px;
     }
+
     &:hover::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
     }
+
     &:focus::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
     }
+
     &:active::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
-      color: #b7b7b7;
     }
   }
+
   .method-item__link {
     padding-left: 52px;
     padding-bottom: 60px;
-
     font-size: 20px;
     line-height: 20px;
-
-
   }
-  .method-item--losing::before {
 
+  .method-item--losing::before {
     width: 200px;
     height: 200px;
-
     left: 446px;
     top: 90px;
-
   }
+
   .method-item--losing::after {
-
-
-
     width: 140px;
     height: 194px;
-    left:  476px;
+    left: 476px;
     top: 78px;
-
-
-
   }
+
   .method-item--gain::before {
-
-
     width: 200px;
     height: 200px;
-
     left: 449px;
     top: 93px;
-
   }
+
   .method-item--gain::after {
-
-
-
     width: 268px;
     height: 112px;
     left: 411px;
     top: 136px;
-
-
-
   }
 }
+
 @media (min-width: @desktop-width) {
   .method-item {
-
-  margin: 0;
-  width: 570px;
+    margin: 0;
+    width: 570px;
   }
+
   .method-item__title {
     font-size: 36px;
     line-height: 37px;
@@ -355,26 +351,29 @@
     margin: 0;
     padding: 0;
     padding-top: 80px;
-    padding-left: 0px;
+    padding-left: 0;
     text-transform: uppercase;
     text-align: center;
     color: @color-text;
   }
+
   .method-item--losing .method-item__title {
     padding-top: 76px;
     padding-left: 22px;
   }
+
   .method-item--losing .method-item__description {
     width: 465px;
     padding: 0;
     margin-left: 52px;
-    padding-top: 0px;
+    padding-top: 0;
   }
+
   .method-item--losing .method-item__link {
     margin-top: 30px;
+
     &::before {
       content: "";
-
       position: absolute;
       background-image: url("../img/icon-right-arrow-long.svg");
       background-position: 0 0;
@@ -384,67 +383,64 @@
       top: 5px;
       left: 184px;
     }
+
     &:hover::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
     }
+
     &:focus::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
     }
+
     &:active::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
-      color: #b7b7b7;
     }
   }
+
   .method-item__description {
     font-size: 16px;
     line-height: 24px;
-
     margin-top: 75px;
     width: 465px;
-
   }
+
   .method-item--losing::before {
-
-
     width: 100px;
     height: 100px;
-
     left: 52px;
     top: 47px;
-
   }
+
   .method-item--losing::after {
-
-
-
     width: 70px;
     height: 97px;
     left: 66px;
     top: 41px;
-
-
   }
+
   .method-item--gain .method-item__title {
     padding-top: 76px;
     padding-left: 62px;
   }
+
   .method-item--gain .method-item__description {
     width: 465px;
     padding: 0;
     margin-left: 52px;
-    padding-top: 0px;
+    padding-top: 0;
   }
+
   .method-item--gain .method-item__link {
     margin-top: 31px;
+
     &::before {
       content: "";
-
       position: absolute;
       background-image: url("../img/icon-right-arrow-long.svg");
       background-position: 0 0;
@@ -454,42 +450,37 @@
       top: 4px;
       left: 178px;
     }
+
     &:hover::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
     }
+
     &:focus::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
     }
+
     &:active::before {
       background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 33px;
       height: 11px;
-      color: #b7b7b7;
     }
   }
+
   .method-item--gain::before {
-
-
     width: 100px;
     height: 100px;
-
     left: 53px;
     top: 47px;
-
   }
-  .method-item--gain::after {
 
+  .method-item--gain::after {
     width: 134px;
     height: 56px;
     left: 34px;
     top: 70px;
-
-
-
   }
-
 }

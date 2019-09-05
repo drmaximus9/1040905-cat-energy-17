@@ -1,106 +1,114 @@
 .main-nav {
   position: relative;
   width: 320px;
-  margin: 0 auto;
-  margin-top: 0px;
+  margin-left: -20px;
 }
+
 .main-nav__wrapper {
   width: 320px;
+  margin: 0;
 }
+
 .main-nav__toggle {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
-
   display: block;
   width: 65px;
   height: 40px;
   padding: 0;
-
   background-color: @color-page;
-
   cursor: pointer;
   border: none;
 }
+
+.main-nav--closed .main-nav__toggle {
+  top: 12px;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
-  top: 23px;
-  left: 41px;
-
+  top: 11px;
+  left: 21px;
   width: 24px;
   height: 2px;
-
   background-color: @color-text;
   box-shadow: 0 8px 0 0 @color-text, 0 16px 0 0 @color-text;
 }
+
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
+
 .main-nav--opened .main-nav__toggle {
   top: 12px;
   left: auto;
 
   &::before,
   &::after {
-  content: "";
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 21px;
+    width: 24px;
+    height: 2px;
+    background-color: @color-text;
+  }
 
-  position: absolute;
-  top: 18px;
-  left: 21px;
-
-  width: 24px;
-  height: 2px;
-
-  background-color: @color-text;
- }
   &::before {
-  transform: rotate(45deg);
-  box-shadow: none;
- }
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
   &::after {
-  transform: rotate(-45deg);
- }
+    transform: rotate(-45deg);
+  }
+
   &:active::before,
   &:active::after {
-  background-color: rgba(255, 255, 255, 0.3);
- }
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .main-nav__closed-item {
     display: none;
   }
+
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }
-@media(min-width: @tablet-width) {
-   .main-nav{
+
+@media (min-width: @tablet-width) {
+  .main-nav {
     width: auto;
+    margin: 0;
   }
+
   .main-nav__wrapper {
     width: 708px;
     display: flex;
     justify-content: space-between;
-    padding-top: 0px;
+    padding-top: 0;
   }
+
   .main-nav__toggle {
     display: none;
   }
 }
+
 @media (min-width: @desktop-width) {
   .main-nav {
     width: 1220px;
     margin: 0;
     margin-top: 48px;
-
   }
+
   .main-nav__wrapper {
     width: 1220px;
-
   }
 }
