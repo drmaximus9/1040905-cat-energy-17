@@ -99,8 +99,7 @@
     }
 
     &:active {
-
-      border: 2px solid @color-green-button;
+      border: 1px solid @color-green-button;
     }
   }
 
@@ -120,12 +119,12 @@
 
   .range-example__before:focus,
   .range-example__after:focus {
-    border: none;
+    border-bottom: 1px solid #989898;
   }
 
   .range-example__before:active,
   .range-example__after:active {
-    border: none;
+    border-color: transparent;
   }
 
   .range-example__after {
@@ -149,8 +148,9 @@
   }
 
   .range-example__after {
-    margin-right: 62px;
+    margin-right: 0;
     margin-left: 15px;
+    padding-right: 0;
   }
 
   .range-example__scale {

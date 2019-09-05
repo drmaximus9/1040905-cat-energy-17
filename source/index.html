@@ -5,13 +5,15 @@
     <meta  name="viewport"  content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <script src="picturefill.js"></script>
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div style="display: none;"><include src="build/img/sprite.svg"></include></div>
     <header class="page-header page-header--main">
       <div class="page-header__wrap-container">
-          <nav class="main-nav main-nav--opened main-nav--nojs">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
             <h2 class="visually-hidden">Навигация</h2>
             <div class="main-nav__wrapper">
                 <a class="page-header__logo">
@@ -24,13 +26,13 @@
                   </a>
                   <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                     <ul class="main-nav__list site-list">
-                      <li class="site-list__item site-list__item--active">
+                      <li class="site-list__item main-nav__closed-item site-list__item--active">
                         <a class="site-list__link">Главная</a>
                       </li>
-                      <li class="site-list__item">
+                      <li class="site-list__item main-nav__closed-item">
                         <a class="site-list__link" href="catalog.html">Каталог продукции</a>
                       </li>
-                      <li class="site-list__item">
+                      <li class="site-list__item main-nav__closed-item">
                         <a class="site-list__link" href="form.html">Подбор программы</a>
                       </li>
                     </ul>
@@ -47,9 +49,12 @@
           </div>
           <p class="choice-program__image">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-              <img class="choice-program__main-product-image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+              <img class="choice-program__main-product-image" src="img/index-can-mobile@1x.png 1x" srcset="img/index-can-mobile@2x.png 2x"
                 width="280" height="270" alt="Cat Energy">
             </picture>
               <a class="choice-program__button " href="choice.html">
@@ -148,16 +153,22 @@
               <div class="living-example__image image-example">
                 <div class="image-example__image-wrap-before">
                   <picture class="image-example__before">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-                    <img  src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до">
+                    <img  src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до">
                   </picture>
                 </div>
                 <div class="image-example__image-wrap-after">
                   <picture class="image-example__after">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-                    <img  src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после">
+                    <img  src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после">
                   </picture>
                 </div>
                 </div>
@@ -190,12 +201,14 @@
           </div>
         </div>
         <div class="invite-contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4s
-            IDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565864947359!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565864947359!5m2!1sru!2sru" width="320" height="362"  style="border: 0;" allowfullscreen></iframe>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-              <img  src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="карта">
+              <img  src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="карта">
             </picture>
         </div>
       </section>

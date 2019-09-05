@@ -49,7 +49,7 @@ gulp.task("webp", function(){
 gulp.task("sprite", function(){
   return gulp.src("source/img/svg/*.svg")
   .pipe(svgstore({
-    inLineSvg: true
+    inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
