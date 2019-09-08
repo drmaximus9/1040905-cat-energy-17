@@ -26,13 +26,13 @@
               </a>
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
               <ul class="main-nav__list site-list site-list--form">
-                <li class="site-list__item main-nav__closed-item ">
+                <li class="site-list__item site-list__item--main main-nav__closed-item ">
                   <a class="site-list__link" href="index.html">Главная</a>
                 </li>
-                <li class="site-list__item main-nav__closed-item">
+                <li class="site-list__item site-list__item--catalog main-nav__closed-item">
                   <a class="site-list__link" href="catalog.html">Каталог продукции</a>
                 </li>
-                <li class="site-list__item main-nav__closed-item site-list__item--active">
+                <li class="site-list__item site-list__item--choice main-nav__closed-item site-list__item--active">
                   <a class="site-list__link">Подбор программы</a>
                 </li>
               </ul>
@@ -67,15 +67,15 @@
           <fieldset class="form__fieldset form__fieldset--choice">
             <ul class="form__choice-list">
               <li class="form__item-choice">
-                <input type="radio" class="form__control form__control--radio" name="item-choice" value="cat-losing" id="cat-losing" checked>
+                <input type="radio" class="form__control form__control--radio visually-hidden" name="item-choice" value="cat-losing" id="cat-losing" checked>
                 <label class="form__label form__label--radio" for="cat-losing">похудение</label>
               </li>
               <li class="form__item-choice">
-                <input type="radio" class="form__control form__control--radio" name="item-choice" value="cat-gain"  id="cat-gain">
+                <input type="radio" class="form__control form__control--radio visually-hidden" name="item-choice" value="cat-gain"  id="cat-gain">
                 <label class="form__label form__label--radio" for="cat-gain">набор массы</label>
               </li>
               <li class="form__item-choice">
-                <input type="radio" class="form__control form__control--radio" name="item-choice" value="cat-unknown" id="cat-unknown">
+                <input type="radio" class="form__control form__control--radio visually-hidden" name="item-choice" value="cat-unknown" id="cat-unknown">
                 <label class="form__label form__label--radio" for="cat-unknown">не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -111,19 +111,19 @@
           <fieldset class="form__fieldset form__fieldset--additionally">
             <div class="form__additionally-wrap">
               <div class="form__wrap-additionally">
-                <input type="checkbox" class="form__control form__control--checkbox" name="additionally"  id="sugar" checked>
+                <input type="checkbox" class="form__control form__control--checkbox visually-hidden" name="additionally"  id="sugar" checked>
                 <label class="form__label form__label--checkbox" for="sugar">сахарозаменитель</label>
               </div>
               <div class="form__wrap-additionally">
-                <input type="checkbox" class="form__control form__control--checkbox" name="additionally" id="water">
+                <input type="checkbox" class="form__control form__control--checkbox visually-hidden" name="additionally" id="water">
                 <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
               </div>
               <div class="form__wrap-additionally">
-                <input type="checkbox" class="form__control form__control--checkbox" name="additionally" id="milk">
+                <input type="checkbox" class="form__control form__control--checkbox visually-hidden" name="additionally" id="milk">
                 <label class="form__label form__label--checkbox" for="milk">молоко</label>
               </div>
               <div class="form__wrap-additionally">
-                <input type="checkbox" class="form__control form__control--checkbox" name="additionally" id="vitamins">
+                <input type="checkbox" class="form__control form__control--checkbox visually-hidden" name="additionally" id="vitamins">
                 <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
               </div>
             </div>
@@ -197,17 +197,13 @@
                 </a>
               </li>
             </ul>
-            <div class="page-footer__development footer-development">
-              <a class="footer-development__link footer-development__link--academy"
-                href="https://htmlacademy.ru/intensive/adaptive">
-                HTML Academy
-              </a>
-              <a class="footer-development__link-image" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg  class="footer-development__image" width="27" height="34">
-                  <use xLink:href="#htmlacademy"></use>
-                </svg>
-              </a>
-            </div>
+            <a class="page-footer__link-academy"
+            href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="page-footer__academy">HTML Academy</span>
+            <svg  class="page-footer__image" width="60" height="60">
+              <use xLink:href="#htmlacademy"></use>
+            </svg>
+            </a>
         </div>
       </footer>
     <script src="js/script.js"></script>

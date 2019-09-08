@@ -81,6 +81,15 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__closed-item {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -105,7 +114,6 @@
   .main-nav {
     width: 1220px;
     margin: 0;
-    margin-top: 48px;
   }
 
   .main-nav__wrapper {

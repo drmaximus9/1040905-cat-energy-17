@@ -26,13 +26,13 @@
                   </a>
                   <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                     <ul class="main-nav__list site-list">
-                      <li class="site-list__item main-nav__closed-item site-list__item--active">
+                      <li class="site-list__item main-nav__closed-item site-list__item--main site-list__item--active">
                         <a class="site-list__link">Главная</a>
                       </li>
-                      <li class="site-list__item main-nav__closed-item">
+                      <li class="site-list__item main-nav__closed-item site-list__item--catalog">
                         <a class="site-list__link" href="catalog.html">Каталог продукции</a>
                       </li>
-                      <li class="site-list__item main-nav__closed-item">
+                      <li class="site-list__item main-nav__closed-item site-list__item--choice">
                         <a class="site-list__link" href="form.html">Подбор программы</a>
                       </li>
                     </ul>
@@ -54,11 +54,11 @@
               <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-              <img class="choice-program__main-product-image" src="img/index-can-mobile@1x.png 1x" srcset="img/index-can-mobile@2x.png 2x"
+              <img class="choice-program__main-product-image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
                 width="280" height="270" alt="Cat Energy">
             </picture>
               <a class="choice-program__button " href="choice.html">
-                <span>Подобрать программу</span>
+               Подобрать программу
               </a>
           </p>
         </div>
@@ -158,7 +158,7 @@
                     <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-                    <img  src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до">
+                    <img  src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до">
                   </picture>
                 </div>
                 <div class="image-example__image-wrap-after">
@@ -168,17 +168,17 @@
                     <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-                    <img  src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после">
+                    <img  src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после">
                   </picture>
                 </div>
                 </div>
                 <div class="living-example__filter-range range-example">
                   <div class="range-example__controls">
-                    <button type="button" class="range-example__before">было</button>
+                    <button type="button" name="before" class="range-example__before">было</button>
                     <div class="range-example__scale">
-                      <button type="button" class="range-example__bar"></button>
+                      <button type="button" name="bar" class="range-example__bar"></button>
                     </div>
-                    <button type="button" class="range-example__after">стало</button>
+                    <button type="button" name="after" class="range-example__after">стало</button>
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@
               <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-              <img  src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="карта">
+              <img  src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="карта">
             </picture>
         </div>
       </section>
@@ -244,17 +244,13 @@
               </a>
             </li>
           </ul>
-            <div class="page-footer__development footer-development">
-              <a class="footer-development__link footer-development__link--academy"
-                href="https://htmlacademy.ru/intensive/adaptive">
-                HTML Academy
-              </a>
-              <a class="footer-development__link-image" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg  class="footer-development__image" width="27" height="34">
-                  <use xLink:href="#htmlacademy"></use>
-                </svg>
-              </a>
-            </div>
+          <a class="page-footer__link-academy"
+            href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="page-footer__academy">HTML Academy</span>
+            <svg  class="page-footer__image" width="60" height="60">
+              <use xLink:href="#htmlacademy"></use>
+            </svg>
+          </a>
       </div>
     </footer>
     <script src="js/script.js"></script>
