@@ -10,6 +10,12 @@
 
 .site-list__item {
   text-align: center;
+  border-top: 1px solid #ebebeb;
+}
+
+.site-list__item-wrap {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .site-list__link {
@@ -23,7 +29,6 @@
   text-transform: uppercase;
   padding-top: 21.5px;
   padding-bottom: 22.5px;
-  border-top: 1px solid #ebebeb;
 }
 
 .site-list__item--main {
@@ -53,9 +58,18 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    width: 520px;
+    width: 459px;
     min-height: 35px;
     padding-bottom: 11px;
+  }
+
+  .site-list__item-wrap {
+    width: auto;
+    margin: 0;
+  }
+
+  .site-list__item {
+    border: none;
   }
 
   .site-list--form {
@@ -80,7 +94,7 @@
 
   .site-list__item--main {
     margin-right: 0;
-    margin-left: 45px;
+    margin-left: 0;
     margin-top: 0;
   }
 
